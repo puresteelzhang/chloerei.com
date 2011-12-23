@@ -1,6 +1,6 @@
 markdown: rdiscount
 pygments: true
 auto: true
-permalink: /:year/:month/:day/:title.html
+permalink: /:year/:month/:day/:title
 host: chloerei.com
 name: "Rei 的人生笔记"
