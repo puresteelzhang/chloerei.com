@@ -1,0 +1,22 @@
+---
+layout: post
+title: 重新启用chloerei.com作为博客页
+---
+
+由于没有找到 <a href="http://geeker.us">http://geeker.us</a> 的发展前景和创新点，决定放弃这个网站的开发，重新启用 http://chloerei.com 作为我的博客页面。
+
+geeker.us 的网站程序我开发了2个多月，接触了一些未曾接触的知识，重复开发了一些不必要的轮子，最终还是没有找到增长点不得不终止。但是 geeker.us 留给我一些值得记录下来的经验。
+
+1、不要写大而全的程序。应该一开始就要考虑好用户认证的模块，然后把各个功能拆分成子项目，否则代码越滚越大，难以维护。
+2、不要重复开发轮子。除非能列出10个理由能说服自己和别人，开发一个已存的系统是有必要的。
+3、web 2.0的世界，数据库是备份，实时数据应该往CPU靠拢（目前是内存）。web 2.0 运行在内存里。
+
+然后是截图留念：
+
+个人主页
+<a rel="attachment wp-att-693" href="http://chloerei.com/2010/12/31/692/rei"><img class="aligncenter size-large wp-image-693" title="Rei" src="http://chloerei.com/wp-content/uploads/2010/12/Rei-438x500.png" alt="" width="438" height="500" /></a>
+
+广播式 Timeline
+<a href="http://chloerei.com/2010/12/31/692/home" rel="attachment wp-att-697"><img src="http://chloerei.com/wp-content/uploads/2010/12/home-275x500.png" alt="" title="home" width="275" height="500" class="aligncenter size-large wp-image-697" /></a>
+
+最后，http://geeker.us 仍会在线运行一段时间，作为我的作品展示。

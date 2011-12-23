@@ -1,0 +1,22 @@
+---
+layout: default
+title: 首页
+---
+
+<div id="home">
+  <h2>技术日志</h2>
+  <ul class="posts">
+    {% for post in site.categories.tech limit:5 %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div id="home">
+  <h2>生活日志</h2>
+  <ul class="posts">
+    {% for post in site.categories.life limit: 5 %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
