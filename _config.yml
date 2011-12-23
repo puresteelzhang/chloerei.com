@@ -6,3 +6,4 @@ permalink: /:year/:month/:day/:title
 host: chloerei.com
 name: "Rei 的人生笔记"
 disqus_shortname: "chloerei"
+google_analytics: "UA-27906069-1"
