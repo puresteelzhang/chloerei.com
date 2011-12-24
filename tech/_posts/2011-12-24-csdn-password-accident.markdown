@@ -33,4 +33,4 @@ CSDN 的技术错误是无法洗底的，如果容许我说两句，我想说一
 [1]: http://news.csdn.net/a/20111221/309505.html
 [2]: http://robbin.iteye.com/blog/1136859
 [3]: http://www.36kr.com/p/70800.html
-[4]: http://localhost:4000/2010/07/18/now-funshow/
+[4]: http://chloerei.com/2010/07/18/now-funshow/
