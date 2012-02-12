@@ -183,6 +183,10 @@ ul.posts span {
   border: none;
 }
 
+#post img {
+  max-width: 40em;
+}
+
 /* terminal */
 
 #post pre.terminal {
