@@ -4,7 +4,7 @@ title: Rails 3.2 的 Ajax 向导
 ---
 前不久入手了《[Web开发敏捷之道][1]》的中文第4版，翻看了 Ajax 部分，发现竟然还是使用 .rjs 模板。.rjs 模板在 3.1 版以后已经被移除。另外我又去看了官方的 [Rails guide][2]，发现也没有讲述 Ajax 的章节。
 
-也就是说一个新手入门，很可能搞不清楚 Rails 对 Ajax 的支持是如何处理的。所以我想在这写写 Rails 3.2 的 Ajax 向导，让不了解 Ajax 的新手了解 Rails 3.2 的 Ajax 处理，或者了解 Ajax 不了解 Rails 的人了解 Rails 对其提供了什么支持。
+也就是说一个新手入门，很可能搞不清楚 Rails 对 Ajax 是如何支持的。所以我想在这写写 Rails 3.2 的 Ajax 向导，让不了解 Ajax 的新手了解 Rails 3.2 的 Ajax 处理，或者了解 Ajax 不了解 Rails 的人知道 Rails 对其提供了什么支持。
 
 ### Ajax 是什么？
 
@@ -23,7 +23,7 @@ Ajax 的实现不拘一格，Rails 所处的服务端即既可以处于控制者
 于是在 Rails 里面处理 Ajax 大致可以分为两种：
 
  1. 用服务端模板(.js.erb, .coffee.erb)提供的服务端的 Ajax
- 2. 服务端只提供 json api 的客户端的 Aajx
+ 2. 服务端只提供 json api 的客户端的 Ajax
 
 这两种 Ajax 实现，实际上都是由客户端发起的 Ajax 请求（通常由 JavaScript 控制），然后由服务端返回数据。而不同的是，服务端既可以只返回一段 json 的纯数据，也可以将更新所需的 JavaScript 逻辑一起打包返回，浏览器在接收到这段数据+逻辑之后，完全按照这段逻辑进行更新操作，看起来就是完全由服务器控制一样。数据+逻辑这种打包方式我就暂称为服务端 Ajax。
 
