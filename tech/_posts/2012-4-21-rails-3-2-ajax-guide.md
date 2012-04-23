@@ -22,7 +22,7 @@ Ajax 的实现不拘一格，Rails 所处的服务端即既可以处于控制者
 
 于是在 Rails 里面处理 Ajax 大致可以分为两种：
 
- 1. 用服务端模板(.js.erb, .coffee.erb)提供的服务端的 Ajax
+ 1. 用服务端模板(.js.erb)提供的服务端的 Ajax
  2. 服务端只提供 json api 的客户端的 Ajax
 
 这两种 Ajax 实现，实际上都是由客户端发起的 Ajax 请求（通常由 JavaScript 控制），然后由服务端返回数据。而不同的是，服务端既可以只返回一段 json 的纯数据，也可以将更新所需的 JavaScript 逻辑一起打包返回，浏览器在接收到这段数据+逻辑之后，完全按照这段逻辑进行更新操作，看起来就是完全由服务器控制一样。数据+逻辑这种打包方式我就暂称为服务端 Ajax。
@@ -69,7 +69,7 @@ Ajax 的实现不拘一格，Rails 所处的服务端即既可以处于控制者
 
 注意看 respond_to 这个方法，通过这个方法，Rails 可以分辨客户端请求的是 html 格式，还是 js 格式的返回，不同的格式请求可以进行不同的渲染输出。
 
-这里的 `format.js { render :layout => false }` 声明了，请求 js 格式的时候去渲染名为 create.js.erb（或者 create.coffee.erb）的模板。现在来添加一个 create.js.erb 模板。
+这里的 `format.js { render :layout => false }` 声明了，请求 js 格式的时候去渲染名为 create.js.erb的模板。现在来添加一个 create.js.erb 模板。
 
     <% if @reply.errors.empty? %>
       $('<%= escape_javascript(render :partial => 'reply', :object => @reply) %>').hide().appendTo($('#replies table > tbody')).fadeIn('fast').css('display', 'table-row');
@@ -137,7 +137,7 @@ Ajax 的实现不拘一格，Rails 所处的服务端即既可以处于控制者
 总的来说，对于 Rails 你需要了解几点：
 
 1. respond_to api [http://apidock.com/rails/ActionController/MimeResponds/respond_to][5]
-2. 对于服务端 Ajax，了解 js.erb 或者 coffee.erb
+2. 对于服务端 Ajax，了解 js.erb
 3. 对于客户端 Ajax，了解 Javascipt 的 Ajax 处理，比如 [http://api.jquery.com/jQuery.ajax/][6]
 
 希望这篇日志对你了解 Rails 的 Ajax 有帮助 : P
