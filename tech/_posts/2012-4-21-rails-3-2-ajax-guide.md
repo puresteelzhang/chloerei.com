@@ -83,6 +83,7 @@ Ajax 的实现不拘一格，Rails 所处的服务端即既可以处于控制者
 
     = form_for @reply, :remote => true do |f|
       = f.text_area :body
+      = f.submit 'post'
 
 这就行了！注意看 `:remote => true` ，这是一个魔法参数，添加了这个参数之后，表单渲染结果将会加上一个 `data-remote="true"` 属性，这会通知 Rails 的 jquery-ujs 前端模块去执行 Ajax 请求。如果你想知道这魔法是怎么实现的，可以去看看 [jquery-ujs][4] 的源码。
 
@@ -118,6 +119,14 @@ Ajax 的实现不拘一格，Rails 所处的服务端即既可以处于控制者
 仅仅增加了两行，就为 create 这个动作增加了 json api 功能！并且，服务端的任务到此结束，接下来的工作交给客户端逻辑。
 
 这意味着你的页面也许会包括这样的代码
+
+表单（不使用 `:remote => true`）
+
+    = form_for @reply do |f|
+      = f.text_area :body
+      = f.submit 'post'
+
+JavaScript
 
     $('new_reply_form').on('submit', function(event){
         $.ajax({url: $(this).prop('action'), dataType: 'json', /* more option */} 
