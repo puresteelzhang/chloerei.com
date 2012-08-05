@@ -52,6 +52,16 @@ table {
   font: 100%;
 }
 
+blockquote {
+  padding: 0 0 0 15px;
+  margin: 0 0 18px;
+  border-left: 5px solid #EEE;
+}
+
+code {
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+}
+
 /*****************************************************************************/
 /*
 /* Home
@@ -82,7 +92,7 @@ ul.posts span {
 .site {
   font-size: 110%;
   text-align: left;
-  width: 40em;
+  width: 50em;
   margin: 3em auto 2em auto;
   line-height: 1.5em;
 }
@@ -170,6 +180,11 @@ ul.posts span {
 #post ul,
 #post ol {
   margin-left: 1.35em;
+}
+
+#post pre {
+  word-break: break-all;
+  word-wrap: break-word;
 }
 
 #post code {
