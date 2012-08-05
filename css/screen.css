@@ -52,16 +52,6 @@ table {
   font: 100%;
 }
 
-blockquote {
-  padding: 0 0 0 15px;
-  margin: 0 0 18px;
-  border-left: 5px solid #EEE;
-}
-
-code {
-  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
-}
-
 /*****************************************************************************/
 /*
 /* Home
@@ -192,14 +182,21 @@ ul.posts span {
   background-color: #eef;
   font-size: 85%;
   padding: 0 .2em;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
 }
 
 #post pre code {
   border: none;
 }
 
+#post blockquote {
+  padding: 0 0 0 15px;
+  margin: 0 0 18px;
+  border-left: 5px solid #EEE;
+}
+
 #post img {
-  max-width: 40em;
+  max-width: 100%;
 }
 
 /* terminal */
